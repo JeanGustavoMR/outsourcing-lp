@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Swift Soft Outsourcing Landing Page Design System
+Professional B2B design with modern tech aesthetics
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 25% 27%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    --primary: 142 78% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 142 30% 92%;
+    --secondary-foreground: 215 25% 27%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 120 60% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 142 78% 36%;
+    
+    /* Swift Soft Apple-style Green Brand Colors */
+    --brand-primary: 142 78% 36%;
+    --brand-secondary: 120 60% 45%;
+    --hero-bg: 215 28% 17%;
+    --hero-foreground: 0 0% 98%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(215 28% 17%) 0%, hsl(215 25% 27%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(142 78% 36%) 0%, hsl(142 78% 46%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(120 60% 45%) 0%, hsl(120 60% 55%) 100%);
+    
+    /* Shadows */
+    --shadow-lg: 0 10px 30px -5px hsl(215 25% 27% / 0.1);
+    --shadow-brand: 0 10px 30px -10px hsl(142 78% 36% / 0.3);
+    
+    /* Animation */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 215 28% 17%;
+    --foreground: 0 0% 98%;
+
+    --card: 215 25% 27%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 215 25% 27%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 142 78% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 25% 35%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 215 25% 35%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 120 60% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 25% 35%;
+    --input: 215 25% 35%;
+    --ring: 142 78% 36%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
